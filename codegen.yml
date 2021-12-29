@@ -1,0 +1,9 @@
+overwrite: true
+schema: "https://top-crane-57.hasura.app/v1/graphql"
+documents: "queries/**/*.ts"
+generates:
+  types/generated/graphql.tsx:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
