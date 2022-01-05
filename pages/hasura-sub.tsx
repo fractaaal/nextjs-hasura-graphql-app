@@ -5,7 +5,7 @@ import { GET_USERS, GET_USERS_LOCAL } from '../queries/queries'
 import { GetUsersQuery } from '../types/generated/graphql'
 import { Layout } from '../components/Layout'
 
-export const FetchSub: VFC = () => {
+const FetchSub: VFC = () => {
   const { data, error } = useQuery<GetUsersQuery>(GET_USERS_LOCAL)
   return (
     <Layout title="Haura fetchPolicy read cache">
